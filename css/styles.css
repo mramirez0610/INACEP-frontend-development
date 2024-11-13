@@ -54,7 +54,7 @@ p {
 }
 .app {
   width: 100%;
-  height: 100%;
+  padding: 0 0 60px 0;
 }
 
 nav {
@@ -467,6 +467,32 @@ footer img {
   footer .footer-links .footer-col p {
     display: none;
   }
+}
+.employment {
+  width: 80vw;
+  margin: 0 auto;
+}
+.employment .employment-header h2 {
+  color: #0065bd;
+}
+.employment .employment-header h1 {
+  color: #141414;
+}
+.employment .openings-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.employment .openings-container .opening {
+  width: 50%;
+  padding: 4%;
+}
+.employment .openings-container .opening .opening-header {
+  border-bottom: 1px dotted #b8b8b8;
+}
+.employment .openings-container .opening .opening-header h2 {
+  color: #0065bd;
 }
 
 /*# sourceMappingURL=styles.css.map */

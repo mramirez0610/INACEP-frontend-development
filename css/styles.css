@@ -494,5 +494,94 @@ footer img {
 .employment .openings-container .opening .opening-header h2 {
   color: #0065bd;
 }
+.bod {
+  width: 80vw;
+  margin: 3% auto;
+}
+.bod .bod-header h2 {
+  color: #0065bd;
+}
+.bod .bod-header h1 {
+  color: #141414;
+}
+.bod .officers-container {
+  width: 100%;
+  padding: 1% 0 3% 0;
+  border-bottom: 40px solid #e0e0e0;
+}
+.bod .officers-container .officers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 0 3%;
+  justify-content: space-between;
+}
+.bod .officers-container .officers .officer {
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.bod .officers-container .officers .officer img {
+  width: 40%;
+  height: auto;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+.bod .officers-container .officers .officer .officer-name {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: wrap;
+  word-break: break-word;
+}
+.bod .officers-container .officers .officer .officer-name p {
+  color: #0065bd;
+}
+.bod .officers-container .officers .officer .officer-name h2,
+.bod .officers-container .officers .officer .officer-name p {
+  margin-bottom: 10px;
+}
+.bod .officers-container .officers .officer .officer-title h3 {
+  color: #0065bd;
+  margin-bottom: 10px;
+}
+.bod .officers-container .officers .officer .officer-info {
+  height: 100%;
+  width: 55%;
+}
+.bod .officers-container .officers .officer .hospitals p {
+  margin-bottom: 2px;
+}
+.bod .members-container {
+  width: 100%;
+  margin-top: 3%;
+}
+.bod .members-container .members {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 3%;
+}
+.bod .members-container .members .member {
+  width: 50%;
+}
+.bod .members-container .members .member .member-name {
+  display: flex;
+  align-items: center;
+  gap: 2%;
+}
+.bod .members-container .members .member .member-name h2 {
+  color: #141414;
+  margin-bottom: 10px;
+}
+.bod .members-container .members .member .member-name p {
+  color: #0065bd;
+  margin-bottom: 10px;
+}
+.bod .members-container .members .member .member-title p {
+  font-weight: 100;
+  color: #909090;
+  margin-bottom: 10px;
+}
 
 /*# sourceMappingURL=styles.css.map */

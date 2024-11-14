@@ -1,0 +1,113 @@
+.bod {
+  width: 80vw;
+  margin: 3% auto;
+
+  .bod-header {
+    h2 {
+      color: $primary;
+    }
+    h1 {
+      color: $black;
+    }
+  }
+
+  .officers-container {
+    width: 100%;
+    padding: 1% 0 3% 0;
+    border-bottom: 40px solid $white;
+
+    .officers-header {
+    }
+
+    .officers {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      padding: 0 3%;
+      justify-content: space-between;
+
+      .officer {
+        width: 45%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        img {
+          width: 40%;
+          height: auto;
+          aspect-ratio: 1 / 1;
+          object-fit: cover;
+        }
+        .officer-name {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          flex-wrap: wrap;
+          word-break: break-word;
+          p {
+            color: $primary;
+          }
+          h2,
+          p {
+            margin-bottom: 10px;
+          }
+        }
+        .officer-title {
+          h3 {
+            color: $primary;
+            margin-bottom: 10px;
+          }
+        }
+        .officer-info {
+          height: 100%;
+          width: 55%;
+        }
+        .hospitals {
+          p {
+            margin-bottom: 2px;
+          }
+        }
+      }
+    }
+  }
+
+  .members-container {
+    width: 100%;
+    margin-top: 3%;
+
+    .members {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0 3%;
+
+      .member {
+        width: 50%;
+        .member-name {
+          display: flex;
+          align-items: center;
+          gap: 2%;
+
+          h2 {
+            color: $black;
+            margin-bottom: 10px;
+          }
+          p {
+            color: $primary;
+            margin-bottom: 10px;
+          }
+        }
+        .member-title {
+          p {
+            font-weight: 100;
+            color: $dark-grey;
+            margin-bottom: 10px;
+          }
+        }
+        .hospital {
+          p {
+          }
+        }
+      }
+    }
+  }
+}

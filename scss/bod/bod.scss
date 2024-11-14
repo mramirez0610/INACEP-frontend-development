@@ -38,33 +38,35 @@
           aspect-ratio: 1 / 1;
           object-fit: cover;
         }
-        .officer-name {
-          display: flex;
-          align-items: center;
-          gap: 5px;
-          flex-wrap: wrap;
-          word-break: break-word;
-          p {
-            color: $primary;
-          }
-          h2,
-          p {
-            margin-bottom: 10px;
-          }
-        }
-        .officer-title {
-          h3 {
-            color: $primary;
-            margin-bottom: 10px;
-          }
-        }
         .officer-info {
           height: 100%;
           width: 55%;
-        }
-        .hospitals {
-          p {
-            margin-bottom: 2px;
+
+          .officer-name {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            flex-wrap: wrap;
+            word-break: break-word;
+            p {
+              color: $primary;
+            }
+            h2,
+            p {
+              margin-bottom: 10px;
+            }
+          }
+          .officer-title {
+            h3 {
+              color: $primary;
+              margin-bottom: 10px;
+            }
+          }
+
+          .hospitals {
+            p {
+              margin-bottom: 2px;
+            }
           }
         }
       }
@@ -105,6 +107,91 @@
         }
         .hospital {
           p {
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 940px) {
+  .bod {
+    .officers-container {
+      padding-bottom: 10%;
+      .officers {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        .officer {
+          width: 45%;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+
+          img {
+            width: 100%;
+          }
+
+          .officer-name {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            h2,
+            p {
+              margin-bottom: 5px;
+            }
+          }
+
+          .officer-title {
+            h3 {
+              margin-bottom: 5px;
+            }
+          }
+
+          .officer-info {
+            width: 100%;
+          }
+
+          .hospitals {
+            p {
+              margin-bottom: 2px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .bod {
+    .members-container {
+      .members {
+        margin-top: 5%;
+        .member {
+          width: 100%;
+          .member-name {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 2%;
+
+            h2 {
+              margin-bottom: 5px;
+            }
+            p {
+              margin-bottom: 5px;
+            }
+          }
+          .member-title {
+            p {
+              margin-bottom: 5px;
+            }
+          }
+          .hospital {
+            p {
+            }
           }
         }
       }

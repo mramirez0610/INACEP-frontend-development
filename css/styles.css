@@ -470,13 +470,14 @@ footer img {
 }
 .employment {
   width: 80vw;
-  margin: 0 auto;
+  margin: 3% auto;
 }
 .employment .employment-header h2 {
   color: #0065bd;
 }
 .employment .employment-header h1 {
   color: #141414;
+  padding-top: 1%;
 }
 .employment .openings-container {
   width: 100%;
@@ -493,6 +494,24 @@ footer img {
 }
 .employment .openings-container .opening .opening-header h2 {
   color: #0065bd;
+  margin-bottom: 2px;
+}
+.employment .openings-container .opening .opening-info {
+  padding-top: 3%;
+}
+.employment .openings-container .opening .opening-info h3 {
+  margin-bottom: 4px;
+}
+.employment .openings-container .opening .opening-info h4 a {
+  color: #0065bd;
+  margin-bottom: 2px;
+}
+
+@media (max-width: 768px) {
+  .employment .openings-container .opening {
+    width: 100%;
+    padding: 4%;
+  }
 }
 .bod {
   width: 80vw;
@@ -528,29 +547,29 @@ footer img {
   aspect-ratio: 1/1;
   object-fit: cover;
 }
-.bod .officers-container .officers .officer .officer-name {
+.bod .officers-container .officers .officer .officer-info {
+  height: 100%;
+  width: 55%;
+}
+.bod .officers-container .officers .officer .officer-info .officer-name {
   display: flex;
   align-items: center;
   gap: 5px;
   flex-wrap: wrap;
   word-break: break-word;
 }
-.bod .officers-container .officers .officer .officer-name p {
+.bod .officers-container .officers .officer .officer-info .officer-name p {
   color: #0065bd;
 }
-.bod .officers-container .officers .officer .officer-name h2,
-.bod .officers-container .officers .officer .officer-name p {
+.bod .officers-container .officers .officer .officer-info .officer-name h2,
+.bod .officers-container .officers .officer .officer-info .officer-name p {
   margin-bottom: 10px;
 }
-.bod .officers-container .officers .officer .officer-title h3 {
+.bod .officers-container .officers .officer .officer-info .officer-title h3 {
   color: #0065bd;
   margin-bottom: 10px;
 }
-.bod .officers-container .officers .officer .officer-info {
-  height: 100%;
-  width: 55%;
-}
-.bod .officers-container .officers .officer .hospitals p {
+.bod .officers-container .officers .officer .officer-info .hospitals p {
   margin-bottom: 2px;
 }
 .bod .members-container {
@@ -582,6 +601,65 @@ footer img {
   font-weight: 100;
   color: #909090;
   margin-bottom: 10px;
+}
+@media (max-width: 940px) {
+  .bod .officers-container {
+    padding-bottom: 10%;
+  }
+  .bod .officers-container .officers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .bod .officers-container .officers .officer {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .bod .officers-container .officers .officer img {
+    width: 100%;
+  }
+  .bod .officers-container .officers .officer .officer-name {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .bod .officers-container .officers .officer .officer-name h2,
+  .bod .officers-container .officers .officer .officer-name p {
+    margin-bottom: 5px;
+  }
+  .bod .officers-container .officers .officer .officer-title h3 {
+    margin-bottom: 5px;
+  }
+  .bod .officers-container .officers .officer .officer-info {
+    width: 100%;
+  }
+  .bod .officers-container .officers .officer .hospitals p {
+    margin-bottom: 2px;
+  }
+}
+@media (max-width: 768px) {
+  .bod .members-container .members {
+    margin-top: 5%;
+  }
+  .bod .members-container .members .member {
+    width: 100%;
+  }
+  .bod .members-container .members .member .member-name {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2%;
+  }
+  .bod .members-container .members .member .member-name h2 {
+    margin-bottom: 5px;
+  }
+  .bod .members-container .members .member .member-name p {
+    margin-bottom: 5px;
+  }
+  .bod .members-container .members .member .member-title p {
+    margin-bottom: 5px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

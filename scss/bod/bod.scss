@@ -136,11 +136,14 @@
           .officer-name {
             display: flex;
             flex-direction: column;
-            gap: 5px;
+            align-content: flex-start;
 
             h2,
             p {
               margin-bottom: 5px;
+            }
+
+            p {
             }
           }
 

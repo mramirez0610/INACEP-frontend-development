@@ -623,7 +623,7 @@ footer img {
   .bod .officers-container .officers .officer .officer-name {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    align-content: flex-start;
   }
   .bod .officers-container .officers .officer .officer-name h2,
   .bod .officers-container .officers .officer .officer-name p {
@@ -660,6 +660,61 @@ footer img {
   .bod .members-container .members .member .member-title p {
     margin-bottom: 5px;
   }
+}
+.conference {
+  width: 80vw;
+  margin: 3% auto;
+}
+.conference .conference-header h2 {
+  color: #0065bd;
+}
+.conference .conference-header h1 {
+  color: #141414;
+  padding-top: 1%;
+}
+.conference .conference-hero .hero {
+  background-image: url(/images/conference/conference0.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin: 0 auto;
+  width: 95%;
+  height: 50vh;
+}
+.conference .conference-cards {
+  width: 80%;
+  height: fit-content;
+  margin: 0 auto;
+  padding: 3% 0 3% 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+.conference .conference-cards .card {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 25%;
+}
+.conference .conference-cards .card img {
+  height: 30%;
+  width: 30%;
+}
+.conference .conference-cards .card .card-content {
+  width: 65%;
+}
+.conference .conference-cards .card .card-content h3 {
+  font-size: 1.3em;
+}
+.conference .conference-cards .card .card-content h3 a {
+  color: #0065bd;
+}
+.conference .conference-cards .card .card-content h4 a {
+  color: #0065bd;
+}
+.conference .conference-cards .card:nth-child(even) {
+  flex-direction: row-reverse;
 }
 
 /*# sourceMappingURL=styles.css.map */

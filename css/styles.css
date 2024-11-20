@@ -486,8 +486,13 @@ footer img {
   justify-content: space-between;
 }
 .employment .openings-container .opening {
-  width: 50%;
-  padding: 4%;
+  width: 45%;
+  padding: 2em;
+  background-color: #ededed;
+  border-radius: 56px;
+  border: 1px solid #d9d9d9;
+  margin: 40px auto;
+  box-shadow: 0 4px 6px rgba(70, 70, 70, 0.05);
 }
 .employment .openings-container .opening .opening-header {
   border-bottom: 1px dotted #b8b8b8;
@@ -510,7 +515,6 @@ footer img {
 @media (max-width: 768px) {
   .employment .openings-container .opening {
     width: 100%;
-    padding: 4%;
   }
 }
 .bod {
@@ -540,12 +544,18 @@ footer img {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 4%;
+  background-color: #ededed;
+  border-radius: 56px;
+  border: 1px solid #d9d9d9;
+  box-shadow: 0 4px 6px rgba(70, 70, 70, 0.05);
 }
 .bod .officers-container .officers .officer img {
   width: 40%;
   height: auto;
   aspect-ratio: 1/1;
   object-fit: cover;
+  border-radius: 30px;
 }
 .bod .officers-container .officers .officer .officer-info {
   height: 100%;
@@ -553,7 +563,6 @@ footer img {
 }
 .bod .officers-container .officers .officer .officer-info .officer-name {
   display: flex;
-  align-items: center;
   gap: 5px;
   flex-wrap: wrap;
   word-break: break-word;
@@ -580,9 +589,20 @@ footer img {
   display: flex;
   flex-wrap: wrap;
   padding: 0 3%;
+  justify-content: space-around;
+  gap: 25px;
 }
 .bod .members-container .members .member {
-  width: 50%;
+  width: 45%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3% 4%;
+  background-color: #ededed;
+  border-radius: 56px;
+  border: 1px solid #d9d9d9;
+  box-shadow: 0 4px 6px rgba(70, 70, 70, 0.05);
 }
 .bod .members-container .members .member .member-name {
   display: flex;
@@ -623,7 +643,6 @@ footer img {
   .bod .officers-container .officers .officer .officer-name {
     display: flex;
     flex-direction: column;
-    align-content: flex-start;
   }
   .bod .officers-container .officers .officer .officer-name h2,
   .bod .officers-container .officers .officer .officer-name p {
@@ -645,6 +664,7 @@ footer img {
   }
   .bod .members-container .members .member {
     width: 100%;
+    padding: 2em;
   }
   .bod .members-container .members .member .member-name {
     flex-direction: column;
@@ -659,6 +679,16 @@ footer img {
   }
   .bod .members-container .members .member .member-title p {
     margin-bottom: 5px;
+  }
+}
+@media (max-width: 525px) {
+  .bod .officers-container .officers {
+    flex-direction: column;
+    align-items: center;
+  }
+  .bod .officers-container .officers .officer {
+    width: 95%;
+    padding: 2em;
   }
 }
 .conference {
@@ -681,9 +711,13 @@ footer img {
   margin: 0 auto;
   width: 95%;
   height: 50vh;
+  background-color: #ededed;
+  border-radius: 56px;
+  border: 1px solid #d9d9d9;
+  box-shadow: 0 4px 6px rgba(70, 70, 70, 0.05);
 }
 .conference .conference-cards {
-  width: 80%;
+  width: 100%;
   height: fit-content;
   margin: 0 auto;
   padding: 3% 0 3% 0;
@@ -694,12 +728,19 @@ footer img {
 .conference .conference-cards .card {
   display: flex;
   justify-content: space-between;
-  width: 100%;
   height: 25%;
+  padding: 40px 60px;
+  background-color: #ededed;
+  border-radius: 56px;
+  border: 1px solid #d9d9d9;
+  width: 82%;
+  margin: 1.5% auto;
+  box-shadow: 0 4px 6px rgba(70, 70, 70, 0.05);
 }
 .conference .conference-cards .card img {
   height: 30%;
   width: 30%;
+  border-radius: 30px;
 }
 .conference .conference-cards .card .card-content {
   width: 65%;
@@ -715,6 +756,29 @@ footer img {
 }
 .conference .conference-cards .card:nth-child(even) {
   flex-direction: row-reverse;
+}
+
+@media (max-width: 850px) {
+  .conference .conference-hero .hero {
+    height: 50vh;
+  }
+  .conference .conference-cards .card {
+    flex-direction: column !important;
+    gap: 20%;
+    width: 100%;
+    padding: 30px;
+  }
+  .conference .conference-cards .card img {
+    width: 100%;
+    height: auto;
+  }
+  .conference .conference-cards .card .card-content {
+    width: 100%;
+    margin-top: 8%;
+  }
+  .conference .conference-cards .card .card-content h3 {
+    font-size: 1.2em;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
